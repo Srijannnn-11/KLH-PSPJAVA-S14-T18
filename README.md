@@ -31,12 +31,3 @@ Hotel-Booking-Occupancy-Manager (under this folder)
 > java HotelBookingManager
 ```
 
-**Git Commands:**
-```
-> git init
-> git add .
-> git commit -m "Initial commit: Hotel Booking and Occupancy Manager"
-> git branch -M main
-> git remote add origin <your-repo-url>
-> git push -u origin main
-```

@@ -48,7 +48,19 @@ public class HotelBookingManagerSystem {
 
         double occupancyRate = calculateOccupancyRate(1, TOTAL_ROOMS);
 
-        printInvoice(name, place, contact, aadhar, days, selectedRoom, pricePerDay, totalBill, occupancyRate);
+        System.out.println("===== Booking Summary =====");
+        System.out.println("Customer Name   : " + name);
+        System.out.println("Place           : " + place);
+        System.out.println("Contact Number  : " + contact);
+        System.out.println("Aadhar Number   : " + aadhar);
+        System.out.println("Room Type       : " + selectedRoom);
+        System.out.println("Price per Day   : Rs." + pricePerDay);
+        System.out.println("Number of Days  : " + days);
+        System.out.println("----------------------------");
+        System.out.println("Total Bill      : Rs." + totalBill);
+        System.out.println("Occupancy Rate  : " + occupancyRate + "%");
+        System.out.println("----------------------------");
+        System.out.println("Thank you for booking with us, " + name + "!");
 
         sc.close();
     }
@@ -59,23 +71,5 @@ public class HotelBookingManagerSystem {
 
     static double calculateOccupancyRate(int roomsBooked, int totalRooms) {
         return ((double) roomsBooked / totalRooms) * 100;
-    }
-
-    static void printInvoice(String name, String place, String contact, String aadhar,
-                              int days, String roomType, int pricePerDay,
-                              double totalBill, double occupancyRate) {
-        System.out.println("===== Booking Summary =====");
-        System.out.println("Customer Name   : " + name);
-        System.out.println("Place           : " + place);
-        System.out.println("Contact Number  : " + contact);
-        System.out.println("Aadhar Number   : " + aadhar);
-        System.out.println("Room Type       : " + roomType);
-        System.out.println("Price per Day   : Rs." + pricePerDay);
-        System.out.println("Number of Days  : " + days);
-        System.out.println("----------------------------");
-        System.out.println("Total Bill      : Rs." + totalBill);
-        System.out.println("Occupancy Rate  : " + occupancyRate + "%");
-        System.out.println("----------------------------");
-        System.out.println("Thank you for booking with us, " + name + "!");
     }
 }

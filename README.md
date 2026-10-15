@@ -11,14 +11,14 @@
 
 **Supervisor's Name:** Dr. Madhavi Karumudi
 
-**Abstract:** The Hotel Booking & Occupancy Manager is a console-based Java application that automates the process of booking hotel rooms and generating customer bills. The system collects guest details such as name, place of origin, contact number, Aadhar number, and the number of days they wish to stay. Guests can then choose from four room categories - Basic, Luxury, Delux, and Platinum - each with a fixed per-day tariff. The program checks room availability in real time using arrays, prevents overbooking of any category, and calculates each customer's total bill based on their chosen room type and duration of stay. At the end of the session, it generates a complete billing summary along with the hotel's overall occupancy rate, calculated as the ratio of rooms booked to total rooms available. This project was built using core Java concepts, specifically methods and arrays, without relying on object-oriented structures or external libraries.
+**Abstract:** The Hotel Booking Occupancy Manager is a console-based Java application that automates the process of booking a hotel room and generating the customer's bill. The system collects guest details such as name, Aadhar number and the number of days they wish to stay, and validates each input before proceeding. Guests can then choose from four room categories - Basic, Luxury, Delux and Platinum - each with a fixed per-day tariff stored in arrays. Rooms are modelled using classes and objects: a `Room` parent class holds the room type and price, while a `LuxuryRoom` child class inherits from it and overrides the billing method to apply an automatic 10% discount. The program calculates the total bill based on the chosen room type and duration of stay and prints a complete booking summary. Invalid or non-numeric input is handled gracefully using exception handling. This project was built using core Java concepts - data types, operators, Scanner input, conditional statements, loops, methods, method overloading, arrays, classes, constructors, inheritance, method overriding, Strings and exception handling - without relying on any external libraries.
 
 **Project Structure:**
 ```
 Hotel-Booking-Occupancy-Manager (under this folder)
 |— README.md
 |— src
-    └── HotelBookingManager.java
+    └── HotelBookingManagerSystem.java
 |— docs
 |— data
 |— results
@@ -27,7 +27,6 @@ Hotel-Booking-Occupancy-Manager (under this folder)
 
 **Execution Instructions:**
 ```
-> javac HotelBookingManager.java
-> java HotelBookingManager
+> javac HotelBookingManagerSystem.java
+> java HotelBookingManagerSystem
 ```
-
